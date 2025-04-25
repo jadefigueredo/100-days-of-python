@@ -1,4 +1,5 @@
-# recursao 
+# primeiro exemplo de recursão
+ 
 class Item:
     def __init__(self, nome, tipo):
         self.nome = nome
