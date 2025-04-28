@@ -7,13 +7,10 @@ def criar_resumo(dia):
     if not os.path.exists(pasta):
         os.makedirs(pasta)
 
-    # Define o nome do arquivo de resumo.md
     arquivo_resumo = os.path.join(pasta, "resumo.md")
 
-    # Obter a data atual
     data_atual = datetime.now().strftime("%d/%m/%Y")
 
-    # Estrutura do resumo.md
     resumo = f"""
 # 🗓️ Dia {dia:02d} - {input('Título da atividade: ')}
 
@@ -40,7 +37,6 @@ def criar_resumo(dia):
 
     print(f"Resumo do dia {dia:02d} criado com sucesso!")
 
-# Exemplo de uso
 if __name__ == "__main__":
     dia = int(input("Qual o número do dia? "))
     criar_resumo(dia)
