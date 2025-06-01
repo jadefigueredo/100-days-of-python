@@ -9,6 +9,15 @@
 - Filas;
 - Caminho mínimo
 
+## 📝 Resumo:
+- A pesquisa em largura diz se existe um caminho de A para B;
+- Se esse caminho existir a pesquisa em largura consegue trazer o caminho mínimo.
+- Se o problema é do tipo: "Encontre o menos X", é bom tentar modelar o problema utilizando grafo e usa a pesquisa em largura para resolver.
+- Filas são FIFO (Primeiro a entrar, primeiro a sair).
+- Pilhas são LIFO (Último a entrar, primeiro a sair).
+- Para que a pesquisa seja em largura é preciso verificar as pessoas na ordem em que elas foram adicionadas à lista de pesquisa. Portanto a lista de pesquisa deve ser uma fila: caso contrário, não se obtém o caminho mínimo.
+- Cada vez que eu precisar verificar alguém/algo, é importante não fazer duas verificações pra não acabar num loop infinito.
+
 ## ✍️ Anotações e Reflexões:
 - Precisei relembrar alguns assuntos.
     - Sintaxe de listas em dicionários - coloquei números fora das aspas dentro da lista de dicionários
